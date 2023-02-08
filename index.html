@@ -7,6 +7,9 @@
     <link rel="shortcut icon" href="assets/favicon.svg" type="image/x-icon" />
     <link rel="stylesheet" type="text/css" href="style.css" />
     <script src="script.js" defer></script>
+    <scrip>if (!localStorage.getItem('loggedIn')) {
+      window.location.href = 'login.html';
+    }</scrip>
   </head>
 
   <body>
@@ -78,7 +81,7 @@
             />
           </svg>
         </div>
-        <div class="square" id="money">Saldo: R$<span id="saldo">00,00</span></div>
+        <div class="square" id="money">Saldo:<span id="saldo">00,00</span></div>
         <div class="header__buttons header__buttons--desktop">
           <a href="#">
             <svg
@@ -182,9 +185,7 @@
     <main class="main-container">
       <section class="content-container">
         <div class="content">
-          <div class="posts">
-            
-          </div>
+          <div class="posts"></div>
         </div>
       </section>
     </main>
@@ -202,7 +203,6 @@
             d="M2.45307 11.751L11.9773 2.02175L21.5015 11.751C21.7906 12.0463 21.9545 12.4468 21.9545 12.8711V20.4556C21.9545 20.7747 21.7037 21 21.4427 21H15.964C15.713 21 15.4721 20.7849 15.4721 20.476V15.8886C15.4721 13.9497 13.9267 12.34 11.9773 12.34C10.0279 12.34 8.48244 13.9497 8.48244 15.8886V20.476C8.48244 20.7849 8.24157 21 7.99053 21H2.51187C2.25085 21 2 20.7747 2 20.4556V12.8711C2 12.4468 2.16397 12.0463 2.45307 11.751Z"
             stroke="var(--text-dark)"
             stroke-width="2"
-            
           />
         </svg>
       </a>
@@ -225,8 +225,10 @@
           />
         </svg>
       </a>
-      <a href="#" class="navbar__button">
-        <svg
+      <a href="#" class="square">
+        Sacar
+
+        <!-- <svg
           width="24"
           height="24"
           viewBox="0 0 24 24"
@@ -261,7 +263,7 @@
             d="M15.75 13.0671C16.0833 13.2595 16.0833 13.7407 15.75 13.9331L10.5 16.9642C10.1667 17.1566 9.75 16.9161 9.75 16.5312L9.75 10.469C9.75 10.0841 10.1667 9.84354 10.5 10.036L15.75 13.0671Z"
             fill="var(--text-dark)"
           />
-        </svg>
+        </svg> -->
       </a>
       <a href="#" class="navbar__button">
         <svg
