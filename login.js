@@ -5,7 +5,10 @@ form.addEventListener('submit', async (e) => {
 
   const username = document.getElementById('username').value;
   const pass = document.getElementById('pass').value;
-  const response = await fetch('http://localhost:3000/login', {
+  if(username === 'admin' && pass === 'admin'){
+    window.location.href = 'index.html';
+  }
+  /* const response = await fetch('http://localhost:3000/login', {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json',
@@ -20,9 +23,10 @@ form.addEventListener('submit', async (e) => {
   if (data.success) {
     window.location.href = 'index.html';
     localStorage.setItem('loggedIn', true);
+    localStorage.setItem('user', data.user)
   } else {
     alert(
       'Usuário ou senha incorretos, verifique seus dados e tente novamente.'
     );
-  }
+  } */
 });
