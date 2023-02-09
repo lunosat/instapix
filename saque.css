@@ -2,11 +2,12 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #F2F2F2;
+    background-color: #f2f2f2;
+    height: 100%;
   }
   
   header {
-    background-color: #3897F0;
+    background-color: #3897f0;
     height: 50px;
     display: flex;
     align-items: center;
@@ -67,7 +68,8 @@ body {
   }
   
   .balance-label {
-    font-size: 12px;
+    font-size: 20px;
+    font-weight: bold;
     margin-bottom: 10px;
   }
   
@@ -83,21 +85,14 @@ body {
     width: 90%;
   }
   
-  .icon-section {
-    display: flex;
-    justify-content: space-between;
-    margin: 20px;
-    width: 90%;
-  }
-  
   .icon-button {
-    width: 40px;
-    height: 40px;
+    width: 70px;
+    height: 70px;
     border-radius: 50%;
     border: none;
     background-color: lightgray;
     cursor: pointer;
-    margin: 0 10px;
+    margin: 5 10px;
   }
   
   .icon-button:hover {
@@ -108,7 +103,6 @@ body {
     width: 100%;
     height: 100%;
   }
-  
   
   .input-section {
     display: flex;
@@ -132,6 +126,7 @@ body {
     height: 30px;
     margin-right: 2px;
   }
+  
   
   .user-input {
     width: 100%;
@@ -164,11 +159,10 @@ body {
     outline: none;
   }
   
-  
   .withdraw-button {
     width: 90%;
     height: 40px;
-    background-color: #3897F0;
+    background-color: #3897f0;
     color: white;
     border: none;
     border-radius: 20px;
@@ -176,4 +170,5 @@ body {
     font-weight: bold;
     margin: 20px;
   }
+  
   
