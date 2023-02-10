@@ -11,7 +11,7 @@ const money = document.getElementById('saldo');
 money.innerHTML = user.balance.toLocaleString('pt-BR', options);
 
 const like = (pid) => {
-  user.balance += 0.50
+  user.balance += 1.00
   //alert(typeof actualValue.innerHTML)
   money.innerHTML = user.balance.toLocaleString('pt-BR', options);
   const button = document.querySelector(`.pid_${pid}`);

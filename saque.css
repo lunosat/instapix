@@ -68,8 +68,9 @@ body {
   }
   
   .balance-box {
-    background-color: lightgray;
+    background-color: purple;
     padding: 10px;
+    color: white;
     border-radius: 10px;
     display: flex;
     flex-direction: column;
@@ -100,7 +101,7 @@ body {
     height: 70px;
     border-radius: 50%;
     border: none;
-    background-color: lightgray;
+    background-color: purple;
     cursor: pointer;
     margin: 5 10px;
   }
@@ -173,7 +174,7 @@ body {
   .withdraw-button {
     width: 90%;
     height: 40px;
-    background-color: #3897f0;
+    background-color: #14a91e;
     color: white;
     border: none;
     border-radius: 20px;

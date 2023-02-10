@@ -130,15 +130,15 @@ img {
 .square {
   width: auto;
   height: 35px;
-  border: 2px solid green;
+  border: 2px solid purple;
   border-radius: 10px;
   display: flex;
   align-items: center;
   justify-content: center;
   font-size: auto;
   font-weight: bold;
-  color: rgb(10, 75, 10);
-  background-color: transparent;
+  color: white;
+  background-color: purple;
   box-sizing: border-box;
 }
 
