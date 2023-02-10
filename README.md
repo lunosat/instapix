@@ -39,3 +39,4 @@ The latest update includes some nice new features, such as the gradient border a
 Made by Leonardo Costa 🙂
 
 Distributed under the MIT License. See ``LICENSE`` for more information.
+# instapix
