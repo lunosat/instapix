@@ -106,6 +106,10 @@ img {
 .header__home {
   margin-top: 5px;
 }
+
+.header__home img {
+  height: 40px;
+}
 .header__theme-button {
   background-color: transparent;
   border: none;

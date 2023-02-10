@@ -1,4 +1,4 @@
-const posts = [
+const post = [
   {
     username: 'Lunosat',
     profilePicture: 'assets/default-user.png',
@@ -6,7 +6,7 @@ const posts = [
     likeCount: 50,
     description: 'Descrição de um teste.',
     minutesAgo: 48,
-    postId: 1
+    postId: 1,
   },
   {
     username: 'Akila',
@@ -15,87 +15,9 @@ const posts = [
     description: 'Nem lembro qual foto é',
     likeCount: 89,
     minutesAgo: 32,
-    postId: 2
+    postId: 2,
   },
 ];
-const fakeUsers = [
-  "maria_silva",
-  "jose_souza",
-  "ana_paula",
-  "luiz_henrique",
-  "carla_ferreira",
-  "roberto_ribeiro",
-  "lucas_santos",
-  "pedro_almeida",
-  "rafaela_costa",
-  "felipe_mendes",
-  "gabriela_oliveira",
-  "bruna_sousa",
-  "marcos_pires",
-  "leticia_ramos",
-  "thiago_fernandes",
-  "camila_pereira",
-  "juliana_silva",
-  "diego_santos",
-  "samuel_alves",
-  "karina_machado",
-  "lucas_rocha",
-  "renata_freitas",
-  "andre_souza",
-  "paula_ribeiro",
-  "gustavo_santana",
-  "vitoria_oliveira",
-  "pedro_silva",
-  "fabio_santos",
-  "julio_mendes",
-  "rafaella_pereira",
-  "andreia_souza",
-  "luana_silva",
-  "tiago_almeida",
-  "marina_santos",
-  "fernanda_machado",
-  "rafael_alves",
-  "ana_clara",
-  "lucas_pereira",
-  "isabela_santos",
-  "gabriel_silva",
-  "vitor_souza",
-  "patricia_mendes",
-  "lucas_costa",
-  "thiago_oliveira",
-  "mariana_silva",
-  "carlos_souza",
-  "jessica_santos",
-  "carlos_almeida",
-  "ana_lucia",
-  "julio_pereira",
-  "lucas_rocha",
-  "marcio_silva",
-  "andre_pereira",
-  "jose_costa",
-  "juliana_mendes",
-  "renato_souza",
-  "marcio_santos",
-  "roberto_almeida",
-  "paula_silva",
-  "ana_maria",
-  "lucas_machado",
-  "joana_souza",
-  "joao_pereira",
-  "vitoria_costa",
-  "pedro_santos",
-  "joao_silva",
-  "renata_almeida",
-  "gabriela_mendes",
-  "mario_souza",
-  "joao_costa",
-  "patricia_pereira",
-  "paulo_silva",
-  "joana_mendes",
-  "joao_almeida",
-  "ana_paula",
-  "lucas_souza"
-]
 
 const postTemplate = (
   username,
@@ -104,7 +26,7 @@ const postTemplate = (
   description,
   likeCount,
   minutesAgo,
-  likeBy, 
+  likeBy,
   postId
 ) => `<article class="post">
 <div class="post__header">
@@ -268,7 +190,51 @@ const postTemplate = (
 </div>
 </article>`;
 
-const postsHTML = posts
+/* const getPosts = async () => {
+  try {
+    let requestOptions = {
+      method: 'GET',
+    };
+    const response = await fetch('http://localhost:3000/posts', requestOptions);
+    const data = await response.json();
+    if (data.status === 200) {
+      let posts = data.posts.map((v) => {
+        return {
+          username: v.username,
+          profilePicture: v.profilePicture || 'assets/default-user.png',
+          image: v.image || 'assets/img1.jpg',
+          description: v.description,
+          likeCount: v.likeCount,
+          minutesAgo: v.timeAgo.time,
+          postId: v._id,
+        };
+      });
+      console.log(posts);
+      const postsHTML = posts
+        .map((post) =>
+          postTemplate(
+            post.username,
+            post.profilePicture,
+            post.image,
+            post.description,
+            post.likeCount,
+            post.minutesAgo,
+            'Marcos Bandera',
+            post.postId
+          )
+        )
+        .join('');
+      document.querySelector('.posts').innerHTML = postsHTML;
+    }
+  } catch (e) {
+    console.log(e);
+  }
+};
+
+getPosts()
+ */
+
+const postsHTML = post
   .map((post) =>
     postTemplate(
       post.username,
@@ -277,7 +243,7 @@ const postsHTML = posts
       post.description,
       post.likeCount,
       post.minutesAgo,
-      fakeUsers[Math.floor(Math.random() * fakeUsers.length)],
+      'Marcos Bandera',
       post.postId
     )
   )

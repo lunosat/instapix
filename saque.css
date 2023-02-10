@@ -1,4 +1,4 @@
-@media only screen and (max-width: 767px) {
+
 
 body {
     font-family: Arial, sans-serif;
@@ -9,17 +9,25 @@ body {
   }
   
   header {
-    background-color: #3897f0;
+   /*  background-color: #3897f0; */
     height: 50px;
     display: flex;
     align-items: center;
     justify-content: center;
   }
   
-  .header-text {
-    color: white;
-    font-size: 24px;
-    font-weight: bold;
+  .header-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70px;
+    border-top: 30px solid #f2f2f2;
+    width: 50%
+  }
+  
+  .header-logo img {
+    height: 30px;
+    width: auto;
   }
   
   .user-info {
@@ -97,9 +105,10 @@ body {
     margin: 5 10px;
   }
   
-  .icon-button:hover {
+  
+  .icon-button.clicked {
     background-color: green;
-  }
+  } 
   
   .icon-button object {
     width: 100%;
@@ -171,6 +180,9 @@ body {
     font-size: 16px;
     font-weight: bold;
     margin: 20px;
+    cursor: pointer;
   }
+
   
-}
+  
+  

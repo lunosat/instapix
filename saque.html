@@ -6,7 +6,7 @@
   </head>
   <body>
     <header>
-      <h1 class="header-text">Instapix</h1>
+      <img src="assets/logo.png" alt="logo" class="header-logo">
     </header>
     <div class="user-info">
       <img src="assets/default-user.png" class="user-picture" />
@@ -18,18 +18,18 @@
     <div class="balance-section">
       <div class="balance-box">
         <p class="balance-label">Seu saldo</p>
-        <p class="balance-value">R$ 50,00</p>
+        <p class="balance-value">R$ 2005,00</p>
       </div>
     </div>
 
     <div class="icon-section">
-      <button class="icon-button">
+      <button class="icon-button" onclick="hover()">
         <object data="assets/icons/cpf.svg" type="image/svg+xml"></object>
       </button>
-      <button class="icon-button">
+      <button class="icon-button" id="cel">
         <object data="assets/icons/cel.svg" type="image/svg+xml"></object>
       </button>
-      <button class="icon-button">
+      <button class="icon-button" id="email">
         <object data="assets/icons/email.svg" type="image/svg+xml"></object>
       </button>
     </div>
@@ -49,6 +49,7 @@
       </div>
     </div>
 
-    <button class="withdraw-button">Sacar</button>
+    <button class="withdraw-button" onclick="alert('Parabéns Marcos, seu saque via pix foi aprovado! Em até 24 horas estará disponível em sua conta!')">Sacar</button>
+    <script src="saque.js"></script>
   </body>
 </html>
