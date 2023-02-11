@@ -5,6 +5,20 @@ body {
   background-color: #fafafa;
   font-family: Arial, sans-serif;
 }
+.header-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80px;
+  border-top: 30px solid #fafafa;
+  border-bottom: 20px solid #fafafa;
+  width: 100%;
+}
+
+.header-logo img {
+  height: 80px;
+  width: auto;
+}
 .container {
   max-width: 400px;
   margin: 0 auto;

@@ -24,7 +24,7 @@ form.addEventListener('submit', async (e) => {
   if (data.success) {
     window.location.href = 'index.html';
     localStorage.setItem('loggedIn', true);
-    localStorage.setItem('user', data.user)
+    localStorage.setItem('user', JSON.stringify(data.user))
   } else {
     alert(
       'Usuário ou senha incorretos, verifique seus dados e tente novamente.'

@@ -11,14 +11,14 @@
     <div class="user-info">
       <img src="assets/default-user.png" class="user-picture" />
       <div class="user-details">
-        <p class="username">Marcio Alves</p>
-        <p class="email">marcioalves02@gmail.com</p>
+        <p class="username"></p>
+        <p class="email"></p>
       </div>
     </div>
     <div class="balance-section">
       <div class="balance-box">
         <p class="balance-label">Seu saldo</p>
-        <p class="balance-value">R$ 2.005,00</p>
+        <p class="balance-value" id="saldo"></p>
       </div>
     </div>
 
@@ -37,7 +37,7 @@
     <div class="input-section">
       <div class="user-input-container">
         <img class="user-icon" src="assets/icons/pix.svg" alt="User Icon" />
-        <input class="user-input" type="text" placeholder="Chave pix" />
+        <input class="user-input" type="text" placeholder="Chave pix" required />
       </div>
       <div class="balance-input-container">
         <img
@@ -45,13 +45,13 @@
           src="assets/icons/money.svg"
           alt="Balance Icon"
         />
-        <input class="balance-input" type="text" placeholder="0" />
+        <input class="balance-input" type="text" placeholder="0" required/>
       </div>
       <hr>
       <div id="sacado"></div>
     </div>
     <!-- <div id="sacado"></div> -->
-    <button class="withdraw-button" onclick="alert('Parabéns Marcio Alves, seu saque via pix foi aprovado! Em até 24 horas estará disponível em sua conta!')">Sacar</button>
+    <button class="withdraw-button" onclick="msg()">Sacar</button>
     <script src="saque.js"></script>
   </body>
 </html>
