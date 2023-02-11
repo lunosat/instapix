@@ -71,6 +71,42 @@ const post = [
     minutesAgo: 32,
     postId: 8,
   },
+  {
+    username: 'marcelotwelve',
+    profilePicture: 'images/marcelotwelve.jpg',
+    image: 'images/marcelotwelve-post.jpg',
+    description: ' ',
+    likeCount: '1.021.431',
+    minutesAgo: 32,
+    postId: 9,
+  },
+  {
+    username: 'tatawerneck',
+    profilePicture: 'images/tatawerneck.jpg',
+    image: 'images/tatawerneck-post.jpg',
+    description: ' ',
+    likeCount: '1.011.231',
+    minutesAgo: 32,
+    postId: 10,
+  },
+  {
+    username: 'dra.deolanebezerra',
+    profilePicture: 'images/deolane.jpg',
+    image: 'images/deolane-post.jpg',
+    description: ' ',
+    likeCount: '1.021.431',
+    minutesAgo: 32,
+    postId: 11,
+  },
+  {
+    username: 'tirullipa',
+    profilePicture: 'images/tirulipa.jpg',
+    image: 'images/tirulipa-post.jpg',
+    description: ' ',
+    likeCount: '1.021.431',
+    minutesAgo: 32,
+    postId: 12,
+  },
 ];
 
 const postTemplate = (
