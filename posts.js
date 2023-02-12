@@ -283,7 +283,7 @@ const postTemplate = (
 const getPosts = async () => {
   try {
     
-    const response = await fetch(`${config.api}/posts"`);
+    const response = await fetch(`${config.api}/posts`);
     const data = await response.json();
     if (data.status === 200) {
       let postss = data.posts.map((v) => {
