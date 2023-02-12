@@ -1,4 +1,4 @@
-const post = [
+const postFake = [
   {
     username: 'carlinhos',
     profilePicture: 'images/carlinhos.jpg',
@@ -173,7 +173,7 @@ const postTemplate = (
 
 <div class="post__footer">
   <div class="post__buttons">
-    <button class="like__button pid_${postId}" onclick="like(${postId})">
+    <button class="like__button pid_${postId}" onclick="like('${postId}')">
     <svg 
       fill="#000000"
       height="24" 
@@ -280,15 +280,13 @@ const postTemplate = (
 </div>
 </article>`;
 
-/* const getPosts = async () => {
+const getPosts = async () => {
   try {
-    let requestOptions = {
-      method: 'GET',
-    };
-    const response = await fetch('http://localhost:3000/posts', requestOptions);
+    
+    const response = await fetch(`${config.api}/posts"`);
     const data = await response.json();
     if (data.status === 200) {
-      let posts = data.posts.map((v) => {
+      let postss = data.posts.map((v) => {
         return {
           username: v.username,
           profilePicture: v.profilePicture || 'assets/default-user.png',
@@ -299,8 +297,8 @@ const postTemplate = (
           postId: v._id,
         };
       });
-      console.log(posts);
-      const postsHTML = posts
+      console.log(postss);
+      const postsHTML = postss
         .map((post) =>
           postTemplate(
             post.username,
@@ -322,9 +320,9 @@ const postTemplate = (
 };
 
 getPosts()
- */
 
-const postsHTML = post
+
+/* const postsHTML = postFake
   .map((post) =>
     postTemplate(
       post.username,
@@ -339,3 +337,4 @@ const postsHTML = post
   )
   .join('');
 document.querySelector('.posts').innerHTML = postsHTML;
+console.log(postFake) */

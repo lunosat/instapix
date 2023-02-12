@@ -23,7 +23,7 @@ const like = async (pid) => {
 };
 
 const updateBalance = async () => {
-  const response = await fetch(`http://localhost:3000/users/${user.username}`, {
+  const response = await fetch(`${config.api}/users/${user.username}`, {
     method: 'PUT',
     headers: {
       'Content-Type': 'application/json',

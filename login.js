@@ -8,7 +8,7 @@ form.addEventListener('submit', async (e) => {
   if(username === 'admin' && pass === 'admin'){
     window.location.href = 'index.html';
   }
-  const response = await fetch('http://localhost:3000/login', {
+  const response = await fetch(`${config.api}/login`, {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json',
