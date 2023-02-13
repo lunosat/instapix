@@ -58,6 +58,15 @@ input[type="submit"] {
 input[type="submit"]:hover {
   background-color: #2c71b3;
 }
+
+.login-message {
+  font-size: 16px;
+  font-weight: bold;
+  color: green;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
 a {
   color: #3897f0;
   font-size: 14px;
@@ -65,3 +74,5 @@ a {
   margin-top: 20px;
   display: block;
 }
+
+

@@ -1,10 +1,12 @@
 const form = document.querySelector('#login-form');
+const loginMessage = document.querySelector(".login-message");
 
 form.addEventListener('submit', async (e) => {
   e.preventDefault();
 
   const username = document.getElementById('username').value;
   const pass = document.getElementById('pass').value;
+  loginMessage.innerHTML = "Realizando login...";
   if(username === 'admin' && pass === 'admin'){
     window.location.href = 'index.html';
   }
@@ -20,12 +22,13 @@ form.addEventListener('submit', async (e) => {
   });
 
   const data = await response.json();
-  console.log(data)
   if (data.success) {
     window.location.href = 'index.html';
     localStorage.setItem('loggedIn', true);
     localStorage.setItem('user', JSON.stringify(data.user))
   } else {
+    loginMessage.style.color = 'red'
+    loginMessage.innerHTML = "Verifique seus dados e tente novamente."
     alert(
       'Usuário ou senha incorretos, verifique seus dados e tente novamente.'
     );
