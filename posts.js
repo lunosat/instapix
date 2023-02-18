@@ -1,4 +1,4 @@
-const postFake = [
+/* const postFake = [
   {
     username: 'carlinhos',
     profilePicture: 'images/carlinhos.jpg',
@@ -107,7 +107,7 @@ const postFake = [
     minutesAgo: 32,
     postId: 12,
   },
-];
+]; */
 
 const postTemplate = (
   username,

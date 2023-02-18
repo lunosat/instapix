@@ -11,9 +11,15 @@ money.innerHTML = user.balance.toLocaleString('pt-BR', options);
 const like = async (pid) => {
   const button = document.querySelector(`.pid_${pid}`);
   const svg = button.querySelector('svg');
-  if(user.likedPosts.length >= 40){
-    alert('Você atingiu o limite de likes, retorne mais tarde.')
-    return
+  if(user.likedPosts.length >= 150){
+    const dateNow = new Date
+    const diferencaHoras = Math.abs(dateNow - user.date) / (1000 * 60 * 60);
+    if(diferencaHoras >= 24){
+      user.likedPosts = []
+    } else {
+      alert('Você atingiu o limite de likes, retorne mais tarde.')
+      return
+    }
   }
   if (svg.style.fill === 'red') {
     console.log('Liked before');

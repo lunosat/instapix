@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+  <header>
+    <title>Admin | Criar usuário</title>
+    <style>
+        body {
+            margin: 5%;
+            padding: 5%;
+        }
+      form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      form label {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin-bottom: 10px;
+        font-size: 16px;
+      }
+
+      form label span {
+        margin-bottom: 5px;
+      }
+
+      form input {
+        padding: 10px;
+        font-size: 16px;
+        border-radius: 5px;
+        border: 1px solid #ddd;
+        margin-bottom: 20px;
+        width: 100%;
+      }
+
+      form button {
+        background-color: #3897f0;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        padding: 10px 20px;
+        font-size: 16px;
+        cursor: pointer;
+      }
+    </style>
+  </header>
+  <body>
+    <div class="popup-form">
+      <form>
+        <h2>Criar usuário</h2>
+        <label for="username">Username</label>
+        <input type="text" id="username" name="username" />
+
+        <label for="email">E-mail</label>
+        <input type="email" id="email" name="email" />
+
+        <label for="password">Senha</label>
+        <input type="password" id="password" name="password" />
+
+        <label for="balance">Saldo</label>
+        <input type="number" id="balance" name="balance" />
+
+        <div class="form-buttons">
+          <button type="submit" class="create-button">Create</button>
+          <button type="button" class="cancel-button">Cancel</button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>

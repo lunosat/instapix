@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Painel Lateral</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="sidebar">
+        <div class="profile">
+          <img class="profile-image" src="user.png" alt="User Profile" />
+          <h3 class="username">Username</h3>
+        </div>
+        <nav>
+          <ul>
+            <li><a href="#users">Usuários</a></li>
+            <li><a href="#posts">Posts</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="main">
+        <section id="users" style="display: none">
+          <h1>Usuários</h1>
+          <div class="search-bar">
+            <input type="text" placeholder="Pesquisar..." id="search-input" />
+            <button>Buscar</button>
+          </div>
+          <button class="create-user-button create-button">
+            Criar usuário
+          </button>
+          <ul class="user-list">
+            <li>
+              <span class="username">Usuário 1</span>
+              <span class="email">usuario1@example.com</span>
+              <button class="edit-button">Editar</button>
+            </li>
+            <li>
+              <span class="username">Usuário 2</span>
+              <span class="email">usuario2@example.com</span>
+              <button class="edit-button">Editar</button>
+            </li>
+            <li>
+              <span class="username">Usuário 3</span>
+              <span class="email">usuario3@example.com</span>
+              <button class="edit-button">Editar</button>
+            </li>
+            <!-- Adicione mais usuários aqui -->
+          </ul>
+        </section>
+        <section id="posts" style="display: none">
+          <h1>Posts</h1>
+          <div class="search-bar">
+            <input
+              type="text"
+              placeholder="Pesquisar..."
+              id="search-input-posts"
+            />
+            <button>Buscar</button>
+          </div>
+          <button class="create-author-button create-button">
+            Criar autor
+          </button>
+          <ul class="author-list">
+            <li>
+              <span class="author-name">Autor 1</span>
+              <span class="description">Descrição do autor 1...</span>
+              <button class="edit-button">Editar</button>
+            </li>
+            <li>
+              <span class="author-name">Autor 2</span>
+              <span class="description">Descrição do autor 2...</span>
+              <button class="edit-button">Editar</button>
+            </li>
+            <li>
+              <span class="author-name">Autor 3</span>
+              <span class="description">Descrição do autor 3...</span>
+              <button class="edit-button">Editar</button>
+            </li>
+            <!-- Adicione mais autores aqui -->
+          </ul>
+        </section>
+      </div>
+    </div>
+     <!--POPUP EDIT USER-->
+    
+    <!---------------------------->
+
+    <script src="script.js"></script>
+  </body>
+</html>
