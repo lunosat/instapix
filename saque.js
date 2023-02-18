@@ -33,6 +33,7 @@ async function saque() {
   }
   if(user.balance < 1500){
     alert('É necessário o saldo mínimo de 1.500,00 para realizar o saque.')
+    return
   }
   alert(
     `Parabéns ${user.username}, seu saque via pix foi aprovado! Em até 24 horas estará disponível em sua conta!`
